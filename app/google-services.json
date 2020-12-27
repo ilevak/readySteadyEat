@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "498135365627",
+    "firebase_url": "https://air1925.firebaseio.com",
+    "project_id": "air1925",
+    "storage_bucket": "air1925.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:498135365627:android:2fdb073fe9f192f202bd5e",
+        "android_client_info": {
+          "package_name": "com.example.readysteadyeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "498135365627-e0q0gt5h6cj7j5q4cgspbklagq9pi5em.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.readysteadyeat",
+            "certificate_hash": "efa049e6c94d9deb5d4be3c6ebe07cdf1762f80d"
+          }
+        },
+        {
+          "client_id": "498135365627-bom0669mhb8i1rocqnqsv62cjh17esm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_2OtjlesS4nIzUuY9y7ZIMi0hlL6sQoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "498135365627-bom0669mhb8i1rocqnqsv62cjh17esm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
