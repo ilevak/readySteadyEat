@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categoryMeal">
+        <item>Pasta</item>
+        <item>Meat</item>
+        <item>Desserts</item>
+        <item>Premeal</item>
+        <item>Rice</item>
+        <item>StupidOne</item>
+        <item>Drinks</item>
+    </string-array>
+
+</resources>

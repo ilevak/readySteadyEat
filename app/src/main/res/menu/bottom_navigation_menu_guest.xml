@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/navigation_list_guest"
+        android:icon="@drawable/ic_restaurant_list_24dp"
+        android:title="Restaurant">
+    </item>
+    <item android:id="@+id/navigation_orders_guest"
+        android:icon="@drawable/ic_orders_24dp"
+        android:title="Orders"/>
+    <item android:id="@+id/navigation_profile_guest"
+        android:icon="@drawable/ic_person_24dp"
+        android:title="Profil"/>
+
+
+
+</menu>

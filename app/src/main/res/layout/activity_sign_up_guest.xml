@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.guest.auth.SignUpActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtIFirstName"
+        android:layout_width="278dp"
+        android:layout_height="43dp"
+        android:hint="First Name"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtILastName"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textSize="15dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.397" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtIEmail"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="15dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtIPassword"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="15dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtIRepeatPassword"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Repeat Password"
+        android:textSize="15dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtIPhoneNumber"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="15dp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgvUserPictureGuest"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/defaultuser"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

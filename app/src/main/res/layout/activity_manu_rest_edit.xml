@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.restaurant.menu.ManuRestaurantEditActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMenuEdit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/orangeLight"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgvDish"
+        android:layout_width="142dp"
+        android:layout_height="113dp"
+        android:src="@drawable/foodicon"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtDishName"
+        android:layout_width="278dp"
+        android:layout_height="43dp"
+        android:hint="Dish Name"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtPrice"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <Spinner
+        android:id="@+id/spnrCategory"
+        android:layout_width="278dp"
+        android:layout_height="38dp"
+        android:background="@android:color/white"
+        android:outlineAmbientShadowColor="@android:color/holo_blue_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkGluten"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:text="Gluten free"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkboxDairy"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:text="Dairy free"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="Save changes"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDeleteDish"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:text="Delete "
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="15dp"
+        app:backgroundTint="#eeeeee"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtDishDescription"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.514" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.readysteadyeat">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ready_steasy_eat_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ready_steasy_eat_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.guest.restaurants.RestaurantProfileActivity"></activity>
+        <activity android:name=".ui.restaurant.menu.ManuRestaurantEditActivity"></activity>
+        <activity android:name=".ui.restaurant.menu.MenuRestaurantAddActivity"></activity>
+        <activity android:name=".ui.restaurant.auth.SignUpActivity" />
+        <activity
+            android:name=".ui.guest.BottomMenuGuestActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.restaurant.BottomMenuRestaurantActivity" />
+        <activity android:name=".ui.guest.auth.SignUpActivity" />
+        <activity android:name=".ui.shared.UserTypeActivity" />
+        <activity android:name=".ui.shared.StartActivity" />
+        <activity android:name=".ui.guest.auth.LogInActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

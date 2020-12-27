@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:id="@+id/restaurantFragment"
+    >
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchRestaurants"
+        android:padding="5dp"
+        android:layout_margin="7dp"
+        android:background="@android:color/white"
+        android:outlineAmbientShadowColor="@android:color/holo_blue_light"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurants_list"
+        android:layout_width="match_parent"
+        android:layout_height="658dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="1dp" />
+</RelativeLayout>

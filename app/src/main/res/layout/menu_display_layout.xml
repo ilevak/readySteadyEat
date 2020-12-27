@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:fadingEdge="horizontal"
+    android:layout_marginVertical="1dp">
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgvDishImage"
+            android:layout_width="110dp"
+            android:layout_height="101dp"
+
+            android:layout_marginTop="25dp"
+            android:src="@drawable/common_full_open_on_phone"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.072" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDishName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish name"
+                android:textAlignment="textStart"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDishCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:textColor="@color/colorPrimary"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtDishDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtDairyFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dairy free"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtGlutenFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gluten free"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="textStart"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="@color/orangeDark"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
